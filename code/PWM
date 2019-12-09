@@ -1,0 +1,16 @@
+//Shoaib Khalid Bajwa
+//Electromedicine 2019-2019
+//PWM " With the help of the program we can see the funcion of PWM (Pulse Width Modulation)
+//The OUTPUT 3 at the start will be "0" and evey 1ms will change(1 bit) till "255" and will stat agian
+byte Level_PWM=0;
+void setup() 
+{
+pinMode(3,OUTPUT);
+}
+
+void loop() 
+{
+analogWrite(3,Level_PWM);
+delay(100);
+Level_PWM=Level_PWM+1;
+}
